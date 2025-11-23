@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- TODO: Paste GTM HEAD snippet here later -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunaRose Retro Jewels | Thank You</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff7fb;
+      color: #3c233c;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffbcd9, #ffd4b8);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .logo span {
+      font-size: 0.8rem;
+      display: block;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: #3c233c;
+      background: rgba(255,255,255,0.6);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 2.2rem 2rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(60,35,60,0.08);
+    }
+
+    .emoji {
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-bottom: 0.9rem;
+    }
+
+    .pill {
+      display: inline-block;
+      margin-top: 0.3rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: #3c233c;
+      color: #ffe9f6;
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .links {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .links a {
+      color: #3c233c;
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #3c233c;
+      color: #ffe9f6;
+      padding: 1.1rem 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .card {
+        padding: 1.8rem 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- TODO: Paste GTM BODY snippet (noscript) here later -->
+
+  <header>
+    <div class="logo">
+      LunaRose
+      <span>RETRO JEWELS</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="payments.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="emoji">💌</div>
+      <h1>Thank you for your order!</h1>
+      <p>
+        Your LunaRose jewels are getting packed with soft tissue, pastel ribbons,
+        and a lot of love. This page will also be used as a conversion page in our
+        analytics setup.
+      </p>
+      <span class="pill">Order Confirmed · Demo</span>
+
+      <div class="links">
+        <p>
+          Want to keep browsing? <a href="products.html">View more pieces</a> or
+          <a href="index.html">go back home</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> LunaRose Retro Jewels · Thank you for shining with us.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
