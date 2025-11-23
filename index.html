@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- TODO: Paste GTM HEAD snippet here later -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunaRose Retro Jewels | Vintage-Inspired Jewelry</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff7fb;
+      color: #3c233c;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffbcd9, #ffd4b8);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .logo span {
+      font-size: 0.8rem;
+      display: block;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: #3c233c;
+      background: rgba(255,255,255,0.6);
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem 4rem;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      max-width: 480px;
+    }
+
+    .hero-title {
+      font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: #3c233c;
+      color: #ffe9f6;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border-radius: 999px;
+      border: none;
+      padding: 0.7rem 1.4rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    }
+
+    .btn-primary {
+      background: #3c233c;
+      color: #ffe9f6;
+      box-shadow: 0 4px 10px rgba(60,35,60,0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(60,35,60,0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #3c233c;
+      color: #3c233c;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .hero-image-card {
+      width: 320px;
+      max-width: 90vw;
+      padding: 1.6rem;
+      border-radius: 24px;
+      background: radial-gradient(circle at top, #ffe0f0 0, #fff7fb 60%, #ffe8d8 100%);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      text-align: center;
+      border: 1px solid rgba(60,35,60,0.06);
+    }
+
+    .hero-circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      border: 8px double #3c233c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.2rem;
+      padding: 1.2rem;
+    }
+
+    .hero-chip {
+      font-size: 0.8rem;
+      opacity: 0.85;
+    }
+
+    .section {
+      padding: 2.5rem 1.5rem 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+
+    .section p {
+      max-width: 640px;
+      margin: 0.2rem auto 1.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.3rem;
+    }
+
+    .highlight-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.2rem 1.1rem;
+      border: 1px solid rgba(60,35,60,0.07);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      font-size: 0.9rem;
+    }
+
+    .highlight-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    footer {
+      background: #3c233c;
+      color: #ffe9f6;
+      padding: 1.2rem 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      header {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- TODO: Paste GTM BODY snippet (noscript) here later -->
+
+  <header>
+    <div class="logo">
+      LunaRose
+      <span>RETRO JEWELS</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="payments.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <div class="hero-badge">Handpicked • Vintage • Feminine</div>
+        <h1 class="hero-title">Retro-inspired jewels for soft, dreamy girls.</h1>
+        <p class="hero-subtitle">
+          LunaRose Retro Jewels curates delicate, old-Hollywood–inspired pieces:
+          pearl chokers, dainty gold chains, and rings that feel like they’ve
+          lived a hundred love stories.
+        </p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="location.href='products.html'">
+            Browse Collection
+          </button>
+          <button class="btn btn-outline" onclick="location.href='payments.html'">
+            Quick Checkout
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image-card">
+        <div class="hero-circle">
+          <div>
+            Soft gold glow, pastel stones,
+            <br>and a little bit of nostalgia.
+          </div>
+        </div>
+        <div class="hero-chip">
+          ✨ Free shipping on orders above ₹1999
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why LunaRose?</h2>
+      <p>
+        Every piece is curated to match a soft, feminine, retro aesthetic—
+        perfect for brunch dates, festive nights, and everyday “main character” moments.
+      </p>
+
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="highlight-title">Hypoallergenic & Skin Friendly</div>
+          <div>Crafted for everyday wear with minimal irritation.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-title">Retro-Inspired Designs</div>
+          <div>Think 90s rom-com, pastel diaries, and polaroid memories.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-title">Thoughtful Packaging</div>
+          <div>Each order comes in a pastel keepsake box, ready to gift.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> LunaRose Retro Jewels · For soft hearts & shiny things.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
